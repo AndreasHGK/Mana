@@ -1,0 +1,10 @@
+---
+name: Mana
+version: 0.1.0
+main: AndreasHGK\Mana\Mana
+api: 3.21.0
+depend:
+  - SellAll
+softdepend:
+  - ScoreHud
+...

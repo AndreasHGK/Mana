@@ -1,0 +1,26 @@
+# Mana by AndreasHGK - config file
+
+# The amount of mana a user should be given when they first join
+default-mana: 100
+
+upgradables:
+  # The type of items that this applies on. Currently the only type is 'tools'
+  # Alternatively, you can make this an array containing all the items you want this to work on
+  - item_type: tools
+    item_upgrades:
+      # The type of the upgrade, currently the only type is 'enchant'
+      - type: enchant
+        # The name of the enchantment, should match the internal name used in pocketmine
+        enchant_name: efficiency
+        # The max level that the enchantment can have
+        max_level: 10
+        # The base price of the upgrade (will be the price for lvl 1)
+        base_price: 150
+        # The amount of mana the price should implement per level (useless if max level is 1)
+        price_increment: 75
+      # You can add as much upgrades as you like
+      - type: enchant
+        enchant_name: unbreaking
+        max_level: 10
+        base_price: 100
+        price_increment: 50
